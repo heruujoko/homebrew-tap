@@ -5,20 +5,20 @@
 class Persona < Formula
   desc "Persona Sync Tool"
   homepage "https://github.com/heruujoko/persona"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/heruujoko/persona/releases/download/v0.0.1/persona_Darwin_x86_64.tar.gz"
-      sha256 "436bdbfd4c236a4dc338d4a6658e82e1ad4f02912102d98072e62aee7539409f"
+      url "https://github.com/heruujoko/persona/releases/download/v0.0.2/persona_Darwin_x86_64.tar.gz"
+      sha256 "8ddf6098a041eb3f32f64ff6683c5e33c9122e27b936c04743f64725e0cde0ec"
 
       def install
         bin.install "persona"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/heruujoko/persona/releases/download/v0.0.1/persona_Darwin_arm64.tar.gz"
-      sha256 "e273036cecb17f21a8f854d1372d1fee1153b379f0e23e9b28b73192780bb60f"
+      url "https://github.com/heruujoko/persona/releases/download/v0.0.2/persona_Darwin_arm64.tar.gz"
+      sha256 "7cc8c88b9fde970af94a845e390adae8f150f2129efe2da8bf15a164d824e1ad"
 
       def install
         bin.install "persona"
@@ -28,15 +28,15 @@ class Persona < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/heruujoko/persona/releases/download/v0.0.1/persona_Linux_x86_64.tar.gz"
-      sha256 "56770d2ce1e807e2fe544f935910c5c3999e5d09f0b24946dab785f19a4de839"
+      url "https://github.com/heruujoko/persona/releases/download/v0.0.2/persona_Linux_x86_64.tar.gz"
+      sha256 "bb1c9821a2bad009964d4bf9a41d47801c53bf782bf1244a02ff014263c0fe02"
       def install
         bin.install "persona"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/heruujoko/persona/releases/download/v0.0.1/persona_Linux_arm64.tar.gz"
-      sha256 "d3410d62de3aff86dccdc9623e75650068b37a001dedb57261ae963e94c1a038"
+      url "https://github.com/heruujoko/persona/releases/download/v0.0.2/persona_Linux_arm64.tar.gz"
+      sha256 "66b8651c43cded84a203c380967ac8f19feb57596ccfb826b806bc1479d31e41"
       def install
         bin.install "persona"
       end
